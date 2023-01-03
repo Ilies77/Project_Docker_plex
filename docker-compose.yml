@@ -110,3 +110,8 @@ services:
       - 80:80 #optional
     restart: unless-stopped
   
+  networks:
+    default:
+        external:
+            name: my-network
+  
